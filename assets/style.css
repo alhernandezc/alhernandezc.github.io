@@ -1,0 +1,147 @@
+/* Adriana L. Hernández Castañeda — personal site
+   Palette: ink on warm paper, teal accent. No external fonts, no JS frameworks. */
+
+:root {
+  --paper: #faf8f4;
+  --ink: #20242a;
+  --muted: #5c6470;
+  --teal: #166a6a;
+  --teal-dark: #0e4f4f;
+  --line: #e4dfd6;
+  --card: #ffffff;
+  --badge: #f0ece3;
+  --maxw: 46rem;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .serif {
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+a { color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--teal-dark); }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+
+/* ---------- header / nav ---------- */
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.nav {
+  max-width: var(--maxw); margin: 0 auto; padding: 1rem 1.25rem;
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+}
+.nav .brand {
+  font-family: Georgia, serif; font-size: 1.05rem; font-weight: 700; color: var(--ink);
+  text-decoration: none; letter-spacing: 0.01em;
+}
+.nav nav { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+.nav nav a {
+  font-size: 0.92rem; color: var(--muted); text-decoration: none;
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+.nav nav a:hover { color: var(--teal-dark); }
+.nav nav a[aria-current="page"] { color: var(--teal); border-bottom-color: var(--teal); }
+.nav nav a.lang { color: var(--teal); font-weight: 600; }
+
+/* ---------- hero ---------- */
+.hero { padding: 3.2rem 0 2.2rem; }
+.hero h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 0 0 0.4rem; }
+.hero .role { color: var(--teal); font-size: 1.12rem; font-weight: 600; margin: 0 0 1.2rem; }
+.hero p.lede { font-size: 1.08rem; margin: 0 0 1rem; max-width: 42rem; }
+.hero .actions { margin-top: 1.4rem; display: flex; gap: 0.7rem; flex-wrap: wrap; }
+
+.btn {
+  display: inline-block; padding: 0.5rem 1rem; border-radius: 6px;
+  font-size: 0.95rem; font-weight: 600; text-decoration: none;
+  border: 1.5px solid var(--teal); transition: background 0.15s;
+}
+.btn.primary { background: var(--teal); color: #fff; }
+.btn.primary:hover { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
+.btn.ghost { color: var(--teal); background: transparent; }
+.btn.ghost:hover { background: rgba(22, 106, 106, 0.08); }
+
+/* ---------- sections ---------- */
+main { padding-bottom: 3rem; }
+section.block { padding: 1.6rem 0; }
+section.block + section.block { border-top: 1px solid var(--line); }
+h2 { font-size: 1.45rem; margin: 0 0 1rem; }
+h2 .kicker, .kicker {
+  display: block; font-family: system-ui, sans-serif; font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.3rem;
+}
+
+/* ---------- publication list ---------- */
+.pub { padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+.pub:last-child { border-bottom: none; }
+.pub h3 { font-size: 1.12rem; margin: 0 0 0.25rem; }
+.pub .meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.45rem; }
+.pub p { margin: 0.35rem 0; }
+.pub .links { font-size: 0.92rem; display: flex; gap: 0.9rem; flex-wrap: wrap; margin-top: 0.45rem; }
+details.bibtex { margin-top: 0.5rem; font-size: 0.85rem; }
+details.bibtex summary { cursor: pointer; color: var(--muted); }
+details.bibtex pre {
+  background: #f1eee7; border: 1px solid var(--line); border-radius: 6px;
+  padding: 0.75rem; overflow-x: auto; font-size: 0.78rem; line-height: 1.45;
+}
+
+/* ---------- project cards ---------- */
+.cards { display: grid; gap: 1.1rem; margin-top: 1.2rem; }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 1.3rem 1.4rem;
+}
+.card h3 { margin: 0 0 0.35rem; font-size: 1.18rem; }
+.card .sub { color: var(--muted); font-size: 0.92rem; margin: 0 0 0.6rem; }
+.card p { margin: 0.4rem 0; }
+.badge {
+  display: inline-block; background: var(--badge); color: var(--teal-dark);
+  border: 1px solid var(--line); border-radius: 999px;
+  font-size: 0.78rem; font-weight: 600; padding: 0.15rem 0.7rem; margin-bottom: 0.6rem;
+}
+.badge.live { background: #e3f1ec; border-color: #bfded2; }
+.card .links { margin-top: 0.6rem; font-size: 0.92rem; display: flex; gap: 0.9rem; flex-wrap: wrap; }
+
+/* ---------- about / prose ---------- */
+.prose p { margin: 0 0 1rem; }
+.prose .es-note { color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- contact footer ---------- */
+.contact-strip {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 1.2rem 1.4rem; margin-top: 1.6rem;
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+}
+.contact-strip .links { display: flex; gap: 1.1rem; flex-wrap: wrap; font-size: 0.95rem; }
+
+footer.site {
+  border-top: 1px solid var(--line); padding: 1.4rem 0 2.2rem; color: var(--muted); font-size: 0.85rem;
+}
+footer.site .wrap { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+/* ---------- cv page ---------- */
+.cv-embed { width: 100%; height: 78vh; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+
+@media (max-width: 640px) {
+  .hero { padding: 2.2rem 0 1.6rem; }
+  .cv-embed { height: 60vh; }
+}
+
+@media print {
+  header.site, footer.site, .actions { display: none; }
+}
