@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gender gaps in the Mexican labor market · Adriana Hernández Castañeda</title>
+<meta name="description" content="21 years of ENOE microdata turned into gender-gap indicators by state and quarter, with an interactive dashboard: participation, pay, informality, and unpaid care.">
+<link rel="canonical" href="https://alhernandezc.github.io/projects/enoe-brechas-genero.html">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gender gaps in the Mexican labor market">
+<meta property="og:description" content="45.2% vs 74.0%: women's and men's labor-force participation in Mexico, mapped state by state across 21 years of survey microdata.">
+<meta property="og:url" content="https://alhernandezc.github.io/projects/enoe-brechas-genero.html">
+<meta property="og:image" content="https://alhernandezc.github.io/assets/og.png">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Adriana Hernández Castañeda</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../cv.html">CV</a>
+      <a class="lang" href="../es/" lang="es" hreflang="es">Español</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap pwide">
+
+  <section class="hero">
+    <p class="crumb"><a href="../projects.html" style="text-decoration:none">Open research</a> · ENOE</p>
+    <h1>Gender gaps in the Mexican labor market</h1>
+    <p class="lede">
+      Twenty-one years of Mexico's official labor-force survey, ~34 million person-records,
+      turned into gender-gap indicators for every state and every quarter: participation,
+      pay, informality, and unpaid care, each with survey-design-correct uncertainty.
+    </p>
+    <div class="btnrow">
+      <a class="btn primary" href="https://alhernandezc.github.io/enoe-brechas-genero/dashboard/">Open the dashboard</a>
+      <a class="btn ghost" href="https://github.com/alhernandezc/enoe-brechas-genero">Code &amp; methodology</a>
+    </div>
+    <div class="statband">
+      <div class="stat reveal"><b><span class="count" data-val="45.2" data-suffix="%">0</span> vs <span class="count" data-val="74.0" data-suffix="%">0</span></b><span>women's vs men's participation, 2026Q1</span></div>
+      <div class="stat reveal"><b><span class="count" data-val="49" data-suffix=" pts">0</span></b><span>the participation gap in Chiapas alone</span></div>
+      <div class="stat reveal"><b><span class="count" data-val="38.3" data-suffix="%">0</span> vs 4.1%</b><span>out of the labor force due to unpaid care, women vs men</span></div>
+      <div class="stat reveal"><b><span class="count" data-val="84" data-suffix="">0</span> quarters</b><span>2005–2026, harmonized into one series</span></div>
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">The question</span>Where, exactly, is the gap?</h2>
+    <p>
+      Mexico debates female participation policy with national averages. But the gaps that
+      matter are local and structural: the difference between a woman's labor market in
+      Chiapas and in Colima is larger than the difference between Mexico and most OECD
+      countries. This project builds the missing measurement layer, so a policy team can
+      see any state, any quarter, any indicator, and tell a real change from survey noise.
+    </p>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Explore</span>The dashboard, live</h2>
+    <iframe class="dashframe" src="https://alhernandezc.github.io/enoe-brechas-genero/dashboard/" title="Interactive dashboard: gender gaps in the Mexican labor market" loading="lazy"></iframe>
+    <p style="font-size:0.9rem; color:var(--muted); margin-top:0.5rem;">
+      Every indicator by state and quarter, with 95% confidence bands.
+      <a href="https://alhernandezc.github.io/enoe-brechas-genero/dashboard/">Open full screen</a>.
+    </p>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Finding 1</span>Geography is the story</h2>
+    <p>
+      In 2026Q1, 31.4% of women in Chiapas participate in the labor force, against 80.8% of
+      Chiapas men. Northern and coastal states run 20+ points higher for women. A national
+      average hides most of the problem, and most of the policy opportunity.
+    </p>
+    <figure class="figblock">
+      <img src="../assets/projects/brecha_participacion_estados.png" alt="Labor-force participation by sex and state, 2026Q1" loading="lazy">
+      <figcaption>Participation by sex and state, 2026Q1. Error bars: 95% confidence intervals.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Finding 2</span>A record with an asterisk</h2>
+    <p>
+      Female participation reached a series record of 46.5% in late 2023 and stands at 45.2%
+      today, up from 39.9% in 2005. The shaded band marks the pandemic-era survey redesign:
+      this pipeline flags it in every chart, so a real recovery can be separated from a
+      measurement artifact. Men's participation has declined six points over the same two
+      decades; the gap narrows from both ends.
+    </p>
+    <figure class="figblock">
+      <img src="../assets/projects/participacion_por_sexo.png" alt="National labor-force participation by sex, 2005 to 2026" loading="lazy">
+      <figcaption>National participation by sex, 2005–2026, with the ENOE-N period marked.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Finding 3</span>The engine of the gap is unpaid care</h2>
+    <p>
+      Among working-age people out of the labor force, 38.3% of women are out because of
+      unpaid domestic work; for men the figure is 4.1%. Meanwhile informality is nearly
+      identical by sex (55.3% vs 54.4%). Women are not in worse jobs than men so much as
+      kept out of jobs entirely, which points policy at care infrastructure, not just
+      labor-market rules.
+    </p>
+    <figure class="figblock">
+      <img src="../assets/projects/quehaceres_por_sexo.png" alt="Out of the labor force due to unpaid domestic work, by sex" loading="lazy">
+      <figcaption>Unpaid domestic work as the reason for being out of the labor force, by sex.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Method</span>Built to be checked</h2>
+    <p>
+      One command reproduces everything from INEGI's public microdata: 84 quarters
+      harmonized across every survey redesign, estimates with Taylor-linearized variances
+      honoring the survey design, and external validation that reproduces INEGI's official
+      bulletin within rounding. No microdata are redistributed.
+    </p>
+    <div class="notebox">
+      Honest caveats travel with the data: the 2020Q2 telephone survey is excluded, income
+      non-response has risen from 19% to 33% and is published alongside every income
+      estimate, and the care indicator is a documented proxy. Full detail in the
+      <a href="https://github.com/alhernandezc/enoe-brechas-genero">repository</a>.
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Resumen</span>En español</h2>
+    <p>
+      Veintiún años de la ENOE convertidos en indicadores de brechas de género por entidad y
+      trimestre. Tres hallazgos: la participación femenina tocó su récord (46.5% en 2023) y
+      aún queda ~29 puntos debajo de la masculina; la geografía manda (Chiapas: 31.4% de las
+      mujeres vs 80.8% de los hombres); y el mecanismo es el trabajo de cuidados no
+      remunerado, la razón de inactividad del 38.3% de las mujeres fuera de la fuerza
+      laboral, contra 4.1% de los hombres.
+      <a href="https://alhernandezc.github.io/enoe-brechas-genero/dashboard/">Tablero interactivo</a> ·
+      <a href="https://github.com/alhernandezc/enoe-brechas-genero">Código y metodología</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap pwide">
+    <span>© 2026 Adriana L. Hernández Castañeda</span>
+    <span><a href="../projects.html">All projects</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.count').forEach(animateCount);
+      io.unobserve(e.target);
+    });
+  }, {threshold: 0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  function animateCount(el){
+    var target = parseFloat(el.dataset.val), suffix = el.dataset.suffix || '';
+    var decimals = (el.dataset.val.split('.')[1] || '').length;
+    if(reduce){ el.textContent = target.toFixed(decimals) + suffix; return; }
+    var t0 = null, dur = 900;
+    function step(t){
+      if(!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      p = 1 - Math.pow(1 - p, 3);
+      el.textContent = (target * p).toFixed(decimals) + suffix;
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+})();
+</script>
+
+</body>
+</html>

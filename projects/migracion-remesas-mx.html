@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who sends money home? Migration &amp; remittances · Adriana Hernández Castañeda</title>
+<meta name="description" content="Remittances to Mexico run at ~$63bn a year. Which migrant communities send the money, and how does their sex composition shape the flow? A corridor panel joining Banxico and ACS data.">
+<link rel="canonical" href="https://alhernandezc.github.io/projects/migracion-remesas-mx.html">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Who sends money home? Sex composition of Mexican migration and remittances">
+<meta property="og:description" content="Florida, Georgia and North Carolina send 1.7 to 1.9 times more remittances per migrant than California. The corridor panel explains why that matters.">
+<meta property="og:url" content="https://alhernandezc.github.io/projects/migracion-remesas-mx.html">
+<meta property="og:image" content="https://alhernandezc.github.io/assets/og.png">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Adriana Hernández Castañeda</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../cv.html">CV</a>
+      <a class="lang" href="../es/" lang="es" hreflang="es">Español</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap pwide">
+
+  <section class="hero">
+    <p class="crumb"><a href="../projects.html" style="text-decoration:none">Open research</a> · Banxico · ACS/IPUMS</p>
+    <h1>Who sends money home?</h1>
+    <p class="lede">
+      Remittances to Mexico now run at roughly US$63 billion a year, and policy discussion
+      treats the senders as one undifferentiated mass. This project joins Banco de México's
+      remittance flows, by US state of origin, with the sex composition of the Mexican-born
+      population in each state. It extends my peer-reviewed research on the changing sex
+      ratios of US immigrant communities.
+    </p>
+    <div class="btnrow">
+      <a class="btn primary" href="https://github.com/alhernandezc/migracion-remesas-mx">Code &amp; working paper</a>
+      <a class="btn ghost" href="https://link.springer.com/article/10.1007/s41996-018-0025-5">The 2019 JERP paper</a>
+    </div>
+    <div class="statband">
+      <div class="stat reveal"><b>$<span class="count" data-val="63" data-suffix="bn">0</span>/yr</b><span>the current pace of remittances to Mexico</span></div>
+      <div class="stat reveal"><b><span class="count" data-val="1.9" data-suffix="×">0</span></b><span>Florida's per-migrant remittances vs California's</span></div>
+      <div class="stat reveal"><b><span class="count" data-val="128" data-suffix="">0</span> : 100</b><span>men per 100 women in Georgia's Mexican-born community</span></div>
+      <div class="stat reveal"><b><span class="count" data-val="51" data-suffix="">0</span></b><span>US states + DC in the corridor panel, flows since 2013</span></div>
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Finding 1</span>Totals mislead; rates inform</h2>
+    <p>
+      California sends the most money in absolute terms, US$18.7 billion over the last four
+      quarters, but only about $4,700 per Mexican-born resident. Florida ($8,900), Georgia
+      ($8,500) and North Carolina ($8,300) send 1.7 to 1.9 times more per migrant, and
+      smaller new corridors like Alabama exceed $14,000, roughly three times California.
+      Ranking states by totals just ranks their populations; per-migrant flows invert the
+      map.
+    </p>
+    <figure class="figblock">
+      <img src="../assets/projects/06_corredor_sexo_remesas.png" alt="Remittances per migrant versus sex composition of the Mexican-born population, by US state" loading="lazy">
+      <figcaption>Remittances per migrant vs. sex composition of the Mexican-born population, by US state.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Finding 2</span>The high-remitting corridors are the male-skewed ones</h2>
+    <p>
+      The heavy per-capita senders run 118 to 133 men per 100 women, against 105 in
+      California and 96 in Arizona. That pattern is consistent with newer, work-cycle
+      migration remitting intensively while settled, family-based communities remit less
+      per person. It is the corridor-level echo of the sex-ratio dynamics in my 2019
+      paper, and the working paper develops it formally.
+    </p>
+    <figure class="figblock">
+      <img src="../assets/projects/02_remesas_entidad_mapa.png" alt="Remittances received by Mexican state" loading="lazy">
+      <figcaption>Where the money lands: remittances by receiving Mexican state, latest four quarters.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Finding 3</span>Growth can hide a demographic transition</h2>
+    <p>
+      As corridors mature, sex ratios balance and per-migrant remittances tend to fall. So
+      the aggregate boom below can coexist with declining sending intensity, and the
+      exposure of each Mexican state depends on which corridors feed it. Distinguishing
+      volume growth from behavior change is exactly what the corridor panel is built for.
+    </p>
+    <figure class="figblock">
+      <img src="../assets/projects/01_remesas_nacional_tendencia.png" alt="Remittances to Mexico, 1995 to 2026" loading="lazy">
+      <figcaption>Remittances to Mexico since 1995, monthly and 12-month average.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Method</span>Reproducible without credentials</h2>
+    <p>
+      The pipeline joins Banxico's SIE (national monthly since 1995, by US state since
+      2013), the public ACS PUMS for the sex composition of the Mexican-born population,
+      and CONAPO denominators, with deflators documented. One command reproduces everything
+      from bundled samples; the full run needs no credentials, and free Banxico and IPUMS
+      keys are optional accelerators. No microdata are redistributed.
+    </p>
+    <div class="notebox">
+      Per-migrant figures divide 2025Q2–2026Q1 flows by ACS 2023 populations and are
+      intensity indicators, not individual behavior. Attribution follows the sending state
+      reported by transfer operators. Details in the
+      <a href="https://github.com/alhernandezc/migracion-remesas-mx">repository</a>.
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Resumen</span>En español</h2>
+    <p>
+      Las remesas hacia México corren a ~US$63 mil millones al año. California envía más
+      dinero en total, pero no más por migrante: ~$4,700 por persona nacida en México,
+      contra $8,300–8,900 en Florida, Georgia y Carolina del Norte, y ~$14,000 en corredores
+      nuevos como Alabama. Los corredores que más remiten per cápita son los de composición
+      más masculina (118–133 hombres por 100 mujeres). Extensión de mi artículo arbitrado de
+      2019 en el <em>Journal of Economics, Race, and Policy</em>.
+      <a href="https://github.com/alhernandezc/migracion-remesas-mx">Código y working paper</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap pwide">
+    <span>© 2026 Adriana L. Hernández Castañeda</span>
+    <span><a href="../projects.html">All projects</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.count').forEach(animateCount);
+      io.unobserve(e.target);
+    });
+  }, {threshold: 0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  function animateCount(el){
+    var target = parseFloat(el.dataset.val), suffix = el.dataset.suffix || '';
+    var decimals = (el.dataset.val.split('.')[1] || '').length;
+    var fmt = function(v){ return decimals ? v.toFixed(decimals) : Math.round(v).toLocaleString('en-US'); };
+    if(reduce){ el.textContent = fmt(target) + suffix; return; }
+    var t0 = null, dur = 900;
+    function step(t){
+      if(!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      p = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * p) + suffix;
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+})();
+</script>
+
+</body>
+</html>

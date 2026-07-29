@@ -1,4 +1,4 @@
-/* Adriana L. Hernández Castañeda — personal site
+/* Adriana L. Hernández Castañeda, personal site
    Palette: ink on warm paper, teal accent. No external fonts, no JS frameworks. */
 
 :root {
@@ -144,4 +144,23 @@ footer.site .wrap { display: flex; justify-content: space-between; gap: 1rem; fl
 
 @media print {
   header.site, footer.site, .actions { display: none; }
+}
+
+/* ---------- project subpages ---------- */
+.pwide { max-width: 54rem; }
+.crumb { font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); font-weight: 700; margin: 0 0 0.5rem; }
+.statband { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 0.9rem; margin: 1.5rem 0 0.5rem; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 0.9rem 1rem; }
+.stat b { display: block; font-family: Georgia, serif; font-size: 1.55rem; line-height: 1.15; color: var(--teal-dark); }
+.stat span { font-size: 0.82rem; color: var(--muted); }
+.figblock { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 0.8rem; margin: 1.2rem 0; }
+.figblock img { width: 100%; height: auto; display: block; border-radius: 6px; }
+.figblock figcaption { font-size: 0.85rem; color: var(--muted); padding: 0.55rem 0.3rem 0.1rem; }
+.dashframe { width: 100%; height: 660px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.btnrow { display: flex; gap: 0.7rem; flex-wrap: wrap; margin: 1.3rem 0 0.3rem; }
+.notebox { background: var(--badge); border-left: 4px solid var(--teal); border-radius: 0 8px 8px 0; padding: 0.9rem 1.1rem; font-size: 0.95rem; margin: 1.2rem 0; }
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }

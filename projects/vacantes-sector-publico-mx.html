@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public-sector vacancies in Mexico · Adriana Hernández Castañeda</title>
+<meta name="description" content="How many federal positions sit empty in Mexico? A public panel joining INEGI censuses, the federal budget staffing annex, and every civil-service posting in the official gazette.">
+<link rel="canonical" href="https://alhernandezc.github.io/projects/vacantes-sector-publico-mx.html">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Public-sector vacancies in Mexico">
+<meta property="og:description" content="~99,000 vacant federal positions (6.9%) at the last full public measurement, with vacancy rates that climb with rank.">
+<meta property="og:url" content="https://alhernandezc.github.io/projects/vacantes-sector-publico-mx.html">
+<meta property="og:image" content="https://alhernandezc.github.io/assets/og.png">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Adriana Hernández Castañeda</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../research.html">Research</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../cv.html">CV</a>
+      <a class="lang" href="../es/" lang="es" hreflang="es">Español</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap pwide">
+
+  <section class="hero">
+    <p class="crumb"><a href="../projects.html" style="text-decoration:none">Open research</a> · Censos de gobierno · PEF · DOF</p>
+    <h1>Public-sector vacancies in Mexico</h1>
+    <p class="lede">
+      How many federal government positions sit empty, and where? This panel joins three
+      official sources that had never been connected, and it is the Mexican counterpart to
+      the statewide civil-service vacancies study I co-authored at the UC Berkeley Labor
+      Center.
+    </p>
+    <div class="btnrow">
+      <a class="btn primary" href="https://github.com/alhernandezc/vacantes-sector-publico-mx">Code &amp; data</a>
+      <a class="btn ghost" href="https://laborcenter.berkeley.edu/civil-service-vacancies-in-california-2022-2023/">The California study</a>
+    </div>
+    <div class="statband">
+      <div class="stat reveal"><b><span class="count" data-val="99055" data-suffix="">0</span></b><span>vacant federal positions at end-2022</span></div>
+      <div class="stat reveal"><b><span class="count" data-val="6.9" data-suffix="%">0</span></b><span>of the census-covered federal workforce, up from 6.3% in 2020</span></div>
+      <div class="stat reveal"><b>up to <span class="count" data-val="19" data-suffix="%">0</span></b><span>vacancy in middle-management rank groups</span></div>
+      <div class="stat reveal"><b><span class="count" data-val="9823" data-suffix="">0</span></b><span>competitively posted positions tracked in the gazette, 2023–2026</span></div>
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">The question</span>A state that can't hire can't deliver</h2>
+    <p>
+      Vacancy data lives in one INEGI census, budgeted headcount in the federal budget's
+      staffing annex, and actual competitive openings across thousands of gazette
+      announcements. Nobody had joined them. This project integrates the three into one
+      public panel, by institution, rank group, and budget branch, with every table
+      documented and every match auditable.
+    </p>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Finding 1</span>The higher the rank, the harder to fill</h2>
+    <p>
+      Operational positions fill at near-normal rates (6.1% vacant). The state's real
+      shortage is specialized and managerial: middle-management groups run 9–19% vacant.
+      That is the same seniority gradient we documented in California, now measured for
+      Mexico, and it points at compensation and competitiveness for skilled roles rather
+      than generalized understaffing.
+    </p>
+    <figure class="figblock">
+      <img src="../assets/projects/01_vacancia_por_grupo_2022.png" alt="Vacancy rate by rank group, federal public administration, end-2022" loading="lazy">
+      <figcaption>Vacancy rate by rank group, end-2022, groups with more than 500 positions.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Finding 2</span>The public record has a hole</h2>
+    <p>
+      The 2023 and 2024 census editions publish the vacancy columns as zeros across the
+      board, so end-2022 is the last complete public photograph of federal vacancies. That
+      makes the gazette panel below, 9,823 competitively posted positions collected daily
+      with a verified backfill to 2013, the best real-time signal of federal hiring that
+      remains public. Median posted pay: MX$32,292 per month.
+    </p>
+    <figure class="figblock">
+      <img src="../assets/projects/02_concursos_dof_mensual.png" alt="Competitively posted positions per month in the official gazette" loading="lazy">
+      <figcaption>Positions posted per month in the DOF, May 2023 to July 2026. Election-period gaps are visible.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Method</span>Three sources, one auditable panel</h2>
+    <p>
+      Six published tables (CC BY 4.0), each with a data dictionary: census vacancy rates by
+      institution and rank, the position-by-position gazette panel with pay, budgeted
+      headcount by branch, the integrated panel, the institution crosswalk with its match
+      method per row, and a parser-quality audit where the pipeline grades its own
+      extraction. One command reproduces all figures from bundled samples with no network.
+    </p>
+    <div class="notebox">
+      The full narrative report is in draft and under author review, not yet citable. The
+      salary comparison against formal-sector wages is deliberately marked provisional, with
+      both known biases documented in the
+      <a href="https://github.com/alhernandezc/vacantes-sector-publico-mx">repository</a>.
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2><span class="kicker">Resumen</span>En español</h2>
+    <p>
+      Panel público de vacantes en el sector público federal: ~99 mil plazas vacantes (6.9%)
+      al cierre de 2022, subiendo desde 6.3% en 2020, con vacancia que crece con la
+      jerarquía (hasta 19% en mandos medios). Las ediciones 2023 y 2024 del censo publican
+      las vacantes en cero, de modo que el panel del DOF (9,823 plazas concursadas,
+      remuneración mediana $32,292 MXN) queda como la mejor señal vigente de contratación
+      federal. Contraparte mexicana del estudio de vacantes de California (UC Berkeley
+      Labor Center) del que soy coautora.
+      <a href="https://github.com/alhernandezc/vacantes-sector-publico-mx">Código y datos</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap pwide">
+    <span>© 2026 Adriana L. Hernández Castañeda</span>
+    <span><a href="../projects.html">All projects</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.count').forEach(animateCount);
+      io.unobserve(e.target);
+    });
+  }, {threshold: 0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  function animateCount(el){
+    var target = parseFloat(el.dataset.val), suffix = el.dataset.suffix || '';
+    var decimals = (el.dataset.val.split('.')[1] || '').length;
+    var fmt = function(v){ return decimals ? v.toFixed(decimals) : Math.round(v).toLocaleString('en-US'); };
+    if(reduce){ el.textContent = fmt(target) + suffix; return; }
+    var t0 = null, dur = 900;
+    function step(t){
+      if(!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      p = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * p) + suffix;
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+})();
+</script>
+
+</body>
+</html>

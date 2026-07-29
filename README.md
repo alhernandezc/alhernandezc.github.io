@@ -7,9 +7,9 @@ Plain HTML/CSS, no build step, served by GitHub Pages.
 
 1. **Rename this repo** to `alhernandezc.github.io`
    (repo → Settings → General → Repository name). This makes the site live at
-   the root URL `https://alhernandezc.github.io` — which is what the CV,
+   the root URL `https://alhernandezc.github.io`, which is what the CV,
    LinkedIn, and all internal links assume.
-2. **Push these files** to the `main` branch (this whole folder is the repo root —
+2. **Push these files** to the `main` branch (this whole folder is the repo root ,
    `.nojekyll` included).
 3. **Enable Pages**: Settings → Pages → Source: *Deploy from a branch* →
    Branch: `main`, folder `/ (root)` → Save.
@@ -21,11 +21,11 @@ Plain HTML/CSS, no build step, served by GitHub Pages.
 - Everything is hand-editable HTML. Shared styles live in `assets/style.css`.
 - **When a research repo goes public**: in `projects.html` and `es/index.html`,
   each project card has a commented-out `links` block marked
-  `<!-- TODO: uncomment when the repo is public -->` — uncomment it.
+  `<!-- TODO: uncomment when the repo is public -->`, uncomment it.
 - **New CV version**: replace the PDFs in `assets/cv/` (keep the same filenames
   and everything keeps working).
 - **ORCID / Google Scholar**: once Adriana creates the profiles, add the links in
-  `index.html` (contact strip — there's a TODO comment) and to the `sameAs`
+  `index.html` (contact strip, there's a TODO comment) and to the `sameAs`
   array in the JSON-LD block at the top of `index.html`.
 
 ## Structure
@@ -44,4 +44,4 @@ assets/           style.css, favicon.svg, og.png, cv/*.pdf
 
 - Custom domain: buy one, add a `CNAME` file with the domain, set DNS per GitHub
   docs, keep HTTPS enforced.
-- Analytics: GoatCounter or Plausible — one `<script>` line in each page.
+- Analytics: GoatCounter or Plausible, one `<script>` line in each page.
