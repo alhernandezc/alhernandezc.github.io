@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gender gaps in the Mexican labor market · Adriana Hernández Castañeda</title>
 <meta name="description" content="21 years of ENOE microdata turned into gender-gap indicators by state and quarter, with an interactive dashboard: participation, pay, informality, and unpaid care.">
-<link rel="canonical" href="https://alhernandezc.github.io/projects/enoe-brechas-genero.html">
+<link rel="canonical" href="https://adrianahc.com/projects/enoe-brechas-genero.html">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/style.css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Gender gaps in the Mexican labor market">
 <meta property="og:description" content="45.2% vs 74.0%: women's and men's labor-force participation in Mexico, mapped state by state across 21 years of survey microdata.">
-<meta property="og:url" content="https://alhernandezc.github.io/projects/enoe-brechas-genero.html">
-<meta property="og:image" content="https://alhernandezc.github.io/assets/og.png">
+<meta property="og:url" content="https://adrianahc.com/projects/enoe-brechas-genero.html">
+<meta property="og:image" content="https://adrianahc.com/assets/og.png">
 </head>
 <body>
 
@@ -40,8 +40,8 @@
       pay, informality, and unpaid care, each with survey-design-correct uncertainty.
     </p>
     <div class="btnrow">
-      <a class="btn primary" href="https://alhernandezc.github.io/enoe-brechas-genero/dashboard/">Open the dashboard</a>
-      <a class="btn ghost" href="https://github.com/alhernandezc/enoe-brechas-genero">Code &amp; methodology</a>
+      <a class="btn primary" href="/enoe-brechas-genero/dashboard/">Open the dashboard</a>
+      <a class="btn ghost" href="#f1">Read the findings</a>
     </div>
     <div class="statband">
       <div class="stat reveal"><b><span class="count" data-val="45.2" data-suffix="%">0</span> vs <span class="count" data-val="74.0" data-suffix="%">0</span></b><span>women's vs men's participation, 2026Q1</span></div>
@@ -64,15 +64,15 @@
 
   <section class="block reveal">
     <h2><span class="kicker">Explore</span>The dashboard, live</h2>
-    <iframe class="dashframe" src="https://alhernandezc.github.io/enoe-brechas-genero/dashboard/" title="Interactive dashboard: gender gaps in the Mexican labor market" loading="lazy"></iframe>
+    <iframe class="dashframe" src="/enoe-brechas-genero/dashboard/" title="Interactive dashboard: gender gaps in the Mexican labor market" loading="lazy"></iframe>
     <p style="font-size:0.9rem; color:var(--muted); margin-top:0.5rem;">
       Every indicator by state and quarter, with 95% confidence bands.
-      <a href="https://alhernandezc.github.io/enoe-brechas-genero/dashboard/">Open full screen</a>.
+      <a href="/enoe-brechas-genero/dashboard/">Open full screen</a>.
     </p>
   </section>
 
   <section class="block reveal">
-    <h2><span class="kicker">Finding 1</span>Geography is the story</h2>
+    <h2 id="f1"><span class="kicker">Finding 1</span>Geography is the story</h2>
     <p>
       In 2026Q1, 31.4% of women in Chiapas participate in the labor force, against 80.8% of
       Chiapas men. Northern and coastal states run 20+ points higher for women. A national
@@ -139,7 +139,7 @@
       mujeres vs 80.8% de los hombres); y el mecanismo es el trabajo de cuidados no
       remunerado, la razón de inactividad del 38.3% de las mujeres fuera de la fuerza
       laboral, contra 4.1% de los hombres.
-      <a href="https://alhernandezc.github.io/enoe-brechas-genero/dashboard/">Tablero interactivo</a> ·
+      <a href="/enoe-brechas-genero/dashboard/">Tablero interactivo</a> ·
       <a href="https://github.com/alhernandezc/enoe-brechas-genero">Código y metodología</a>.
     </p>
   </section>
@@ -148,12 +148,12 @@
 
 <footer class="site">
   <div class="wrap pwide">
+
     <span>© 2026 Adriana L. Hernández Castañeda</span>
     <span><a href="../projects.html">All projects</a></span>
   </div>
-</footer>
-
-<script>
+  <div class="wrap pwide" style="margin-top:0.5rem"><span class="colophon" style="font-size:0.8rem;color:#9aa3ad">All research by Adriana L. Hernández Castañeda · Website by Ahuitz Rojas</span></div>
+</footer><script>
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var io = new IntersectionObserver(function(es){

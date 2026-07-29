@@ -1,19 +1,19 @@
-# alhernandezc.github.io
+# adrianahc.com
 
 Personal site of **Adriana L. Hernández Castañeda**: economist & demographer.
 Plain HTML/CSS, no build step, served by GitHub Pages.
 
 ## Deploy (one time, ~10 minutes)
 
-1. **Rename this repo** to `alhernandezc.github.io`
+1. **Rename this repo** to `adrianahc.com`
    (repo → Settings → General → Repository name). This makes the site live at
-   the root URL `https://alhernandezc.github.io`, which is what the CV,
+   the root URL `https://adrianahc.com`, which is what the CV,
    LinkedIn, and all internal links assume.
 2. **Push these files** to the `main` branch (this whole folder is the repo root ,
    `.nojekyll` included).
 3. **Enable Pages**: Settings → Pages → Source: *Deploy from a branch* →
    Branch: `main`, folder `/ (root)` → Save.
-4. Wait 1–2 minutes, then open **https://alhernandezc.github.io** and click
+4. Wait 1–2 minutes, then open **https://adrianahc.com** and click
    every nav link, the two CV download buttons, and the Español toggle.
 
 ## Updating content

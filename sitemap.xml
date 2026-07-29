@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://alhernandezc.github.io/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://alhernandezc.github.io/es/"/>
+    <loc>https://adrianahc.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://adrianahc.com/es/"/>
     <changefreq>monthly</changefreq><priority>1.0</priority>
   </url>
-  <url><loc>https://alhernandezc.github.io/research.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://alhernandezc.github.io/projects.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://alhernandezc.github.io/cv.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adrianahc.com/research.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://adrianahc.com/projects.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://adrianahc.com/cv.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url>
-    <loc>https://alhernandezc.github.io/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alhernandezc.github.io/"/>
+    <loc>https://adrianahc.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adrianahc.com/"/>
     <changefreq>monthly</changefreq><priority>0.9</priority>
   </url>
-  <url><loc>https://alhernandezc.github.io/projects/enoe-brechas-genero.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alhernandezc.github.io/projects/vacantes-sector-publico-mx.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alhernandezc.github.io/projects/migracion-remesas-mx.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adrianahc.com/projects/enoe-brechas-genero.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adrianahc.com/projects/vacantes-sector-publico-mx.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://adrianahc.com/projects/migracion-remesas-mx.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
