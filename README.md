@@ -1,6 +1,6 @@
 # alhernandezc.github.io
 
-Personal site of **Adriana L. Hernández Castañeda** — economist & demographer.
+Personal site of **Adriana L. Hernández Castañeda**: economist & demographer.
 Plain HTML/CSS, no build step, served by GitHub Pages.
 
 ## Deploy (one time, ~10 minutes)
