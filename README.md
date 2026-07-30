@@ -3,7 +3,7 @@
 Personal site of **Adriana L. Hernández Castañeda**: economist & demographer.
 Plain HTML/CSS, no build step, served by GitHub Pages.
 
-## Deploy (one time, ~10 minutes)
+## Deploy (one time, <10 minutes)
 
 1. **Rename this repo** to `adrianahc.com`
    (repo → Settings → General → Repository name). This makes the site live at
